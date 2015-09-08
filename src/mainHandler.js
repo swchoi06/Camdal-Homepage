@@ -4,12 +4,30 @@
 
 'use strict';
 
+var mysqlConn = require(SOURCE_ROOT + '/module/mysql').getConnection();
+
 exports.viewMainPage = function (req, res) {
     res.render('main');
 };
 
 exports.stashRequest = function (req, res) {
-    var userInfo = req.body.userInfo,
-        userCampus = req.body.userCampus,
+    var userCampus = req.body.userCampus,
+        userContact = req.body.userContact,
         userType = req.body.userType;
+
+    var data = {
+        user_campus: userCampus,
+        user_contact: userContact,
+        user_type: userType
+    };
+
+    mysqlConn.query('INSERT INTO open_request SET ?', data, function (err, result) {
+        if (err) {
+            error(err);
+            res.status(500).send();
+        } else {
+            console.log(result);
+            res.status(200).send();
+        }
+    });
 };

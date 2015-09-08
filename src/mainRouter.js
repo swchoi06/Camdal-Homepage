@@ -16,5 +16,6 @@ router.use(function (req, res, next) {
 });
 
 router.get('/', mainHandler.viewMainPage);
+router.post('/open_request', mainHandler.stashRequest);
 
 module.exports = router;

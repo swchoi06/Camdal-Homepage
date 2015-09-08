@@ -61,5 +61,18 @@ function registerEvent() {
 }
 
 function sendOpenRequest(userCampus, userContact, userType) {
-
+    $.ajax({
+        type: 'POST',
+        async: true,
+        url: '/open_request',
+        data: {
+            userCampus: userCampus,
+            userContact: userContact,
+            userType: userType
+        }
+    }).done(function (data) {
+        $('#submitButton').text('완료되었습니다!');
+    }).fail(function () {
+        $('#submitButton').text('에러에요! 다시해주세요!');
+    });
 }
