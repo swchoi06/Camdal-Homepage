@@ -99,7 +99,7 @@ body {
 .content {
     position: relative;
     margin-left: 30px;
-    margin-top: -260px;
+    margin-top: -270px;
     width: 800px;
     height: 500px;
     border: 1px solid black;
@@ -171,4 +171,44 @@ body {
     margin-top: 10px;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.7);
+}
+
+#section2 .title {
+    width: 200px;
+    height: 20px;
+    margin-left: 80px;
+    margin-bottom: 42px;
+    color: rgba(255, 127, 39, 0.9);
+    font-size: 20px;
+    line-height: 70px;
+}
+
+#section2 .description {
+    width: 560px;
+    margin-left: 94px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#section2 .description span {
+    font-size: 16px;
+    color: rgba(255, 127, 39, 0.9);
+    line-height: 42px;
+}
+
+#section2 .campusList {
+    float: left;
+    width: 300px;
+    height: auto;
+    line-height: 30px;
+    font-size: 16px;
+    color: rgba(255, 127, 39, 0.8);
+}
+
+#section2 .campusList.first {
+    margin-left: 94px;
 }
