@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+    url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+    url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+    url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+
+body {
+    background-color: #FAF7F1;
+    font-family: 'Nanum Gothic';
+}
+
+#main {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#logo {
+    position: relative;
+    top: 50px;
+    left: 20px;
+    z-index: 3;
+    width: 260px;
+    height: 70px;
+}
+
+#logo img#icon {
+    float: left;
+    height: 70px;
+}
+
+#logo img#title {
+    float: left;
+    height: 60px;
+    margin-left: 26px;
+    margin-top: 7px;
+}
+
+#link {
+    position: relative;
+    float: right;
+    z-index: 3;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border: 2px solid rgba(255, 127, 39, 0.6);
+    color: rgba(255, 127, 39, 0.6);
+    font-family: Lato, Helvetica;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#menu {
+    clear: both;
+    position: relative;
+    float: right;
+    top: 20px;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    width: 88px;
+    height: 32px;
+    padding: 3px 12px 4px 0;
+    border-right: 2px solid rgba(255, 127, 39, 0.25);
+    text-align: right;
+    line-height: 32px;
+    font-size: 18px;
+}
+
+#menu li.active {
+    border-right: 2px solid rgba(255, 127, 39, 0.8);
+}
+
+#menu li a {
+    color: rgba(255, 127, 39, 0.25);
+    text-decoration: none;
+}
+
+#menu li.active a {
+    color: rgba(255, 127, 39, 0.8);
+}
+
+#menu li.small {
+    height: 17px;
+    line-height: 17px;
+    font-size: 13px;
+}
+
+.content {
+    position: relative;
+    margin-left: 30px;
+    margin-top: -260px;
+    width: 800px;
+    height: 470px;
+}
+
+#vision {
+    width: 800px;
+    height: 120px;
+    color: rgba(255, 127, 39, 0.9);
+    font-size: 40px;
+    text-align: center;
+    line-height: 70px;
+}
+
+#vision span {
+    font-size: 36px;
+    line-height: 50px;
+}
+
+#vision-detail {
+    width: 800px;
+    height: 110px;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#info {
+    width: 800px;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 17px;
+    text-align: center;
+    line-height: 36px;
+}
+
+#info span {
+    font-size: 19px;
+    color: rgba(255, 127, 39, 0.9);
+    line-height: 42px;
+}

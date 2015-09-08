@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+'use strict';
+
+//load global config
+require('./globalConfig');
+
+var app = require(SOURCE_ROOT + '/app');
+
+app.set('port', process.env.PORT || 3000);
+
+var server = app.listen(app.get('port'), function () {
+    info('Server listening on port: ' + app.get('port'));
+});
