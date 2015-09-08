@@ -1,5 +1,5 @@
 //
-   Created by recover39 on 2015. 9. 7..
+   Created by youngkim on 2015. 9. 7..
 html
     head
         title 캠퍼스:달
@@ -104,7 +104,7 @@ html
                         .description
                             | 현재 캠퍼스달에는&nbsp;
                             span
-                                | 18개 대학 캠퍼스, 10개의 학생회&nbsp;
+                                | 18개 대학 캠퍼스, 9개의 학생회&nbsp;
                             | 가 참여하고 있습니다.
                             br
                             | 서비스 운영 및 개발은 캠퍼스달팀이 담당하며,
@@ -153,7 +153,21 @@ html
                         .title
                             | - 오픈신청
                         .form
+                            .formCell
+                                img(src='/images/campus.png')
+                                input#campusName(placeholder='캠퍼스 이름')
+                            .formCell
+                                img(src='/images/contact.png')
+                                input#contact(placeholder='연락처 (전화/이메일)')
                             .type
-                                |
-
-
+                                .typeCell
+                                    img#studentBox(src='/images/uncheck.png')
+                                    span
+                                        | 학생회 참여 신청
+                                .typeCell
+                                    img#associationBox(src='/images/uncheck.png')
+                                    span
+                                        | 우리 학교도 열어주세요 (학생)
+                            #submitButton
+                                | 오픈신청하기!
+                        #submitPopup
