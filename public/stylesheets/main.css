@@ -101,24 +101,26 @@ body {
     margin-left: 30px;
     margin-top: -260px;
     width: 800px;
-    height: 470px;
+    height: 500px;
+    border: 1px solid black;
 }
 
-#vision {
+#section0 #vision {
     width: 800px;
     height: 120px;
+    margin-top: 50px;
     color: rgba(255, 127, 39, 0.9);
     font-size: 40px;
     text-align: center;
     line-height: 70px;
 }
 
-#vision span {
+#section0 #vision span {
     font-size: 36px;
     line-height: 50px;
 }
 
-#vision-detail {
+#section0 #vision-detail {
     width: 800px;
     height: 110px;
     margin-top: 30px;
@@ -128,7 +130,7 @@ body {
     line-height: 40px;
 }
 
-#info {
+#section0 #info {
     width: 800px;
     height: 100%;
     color: rgba(0, 0, 0, 0.8);
@@ -137,8 +139,36 @@ body {
     line-height: 36px;
 }
 
-#info span {
+#section0 #info span {
     font-size: 19px;
     color: rgba(255, 127, 39, 0.9);
     line-height: 42px;
+}
+
+#section1 .title {
+    width: 200px;
+    height: 20px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    color: rgba(255, 127, 39, 0.9);
+    font-size: 20px;
+    line-height: 70px;
+}
+
+#section1 .news {
+    width: 700px;
+    height: 60px;
+    margin-left: 94px;
+}
+
+#section1 .news .newslink {
+    font-size: 17px;
+    text-decoration: none;
+    color: rgba(255, 127, 39, 0.9);
+}
+
+#section1 .news .reference {
+    margin-top: 10px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
 }
