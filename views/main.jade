@@ -24,7 +24,7 @@ html
                 li.big(data-menuanchor='introduction')
                     a(href='#introduction')
                         | 캠달소개
-                li.small(data-menuanchor='news')
+                li.big(data-menuanchor='news')
                     a(href='#news')
                         | 언론보도
                 li.big(data-menuanchor='campus')
@@ -32,7 +32,7 @@ html
                         | 참여대학
                 li.big(data-menuanchor='cooperation')
                     a(href='#cooperation')
-                        | 제휴문의
+                        | 오픈신청
             #fullpage
                 .section#section0
                     .content
@@ -53,7 +53,11 @@ html
                             span
                                 | "모두를 만족시키는 배달앱"
                             | &nbsp; 을 만들고자 합니다.
-
+                        #download
+                            .downloadLink(onclick='window.open(\'https://itunes.apple.com/kr/app/kaempeoseu-dal/id726115856?mt=8\', \'_blank\');')
+                                | iPhone
+                            .downloadLink(onclick='window.open(\'https://play.google.com/store/apps/details?id=com.lchpatners.shadal&hl=ko\', \'_blank\');')
+                                | Android
                 .section#section1
                     .content
                         .title
@@ -146,4 +150,10 @@ html
                             | 한국영상대학교 세종캠퍼스
                 .section#section3
                     .content
+                        .title
+                            | - 오픈신청
+                        .form
+                            .type
+                                |
+
 
