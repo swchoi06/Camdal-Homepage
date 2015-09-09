@@ -41,10 +41,12 @@ function registerEvent() {
     $('#submitButton').click(function () {
         var userCampus = '',
             userContact = '',
+            userInvoice = '',
             userType = '';
 
         userCampus = $('#campusName').val();
         userContact = $('#contact').val();
+        userInvoice = $('#invoice').val();
 
         if (studentBoxCheck) {
             userType = 'student';
@@ -53,14 +55,14 @@ function registerEvent() {
         }
 
         if (userCampus != '' && userContact != '' && userType != '') {
-            sendOpenRequest(userCampus, userContact, userType);
-        } else if (userType === '' && (userCampus != '' && userContact != '')) {
+            sendOpenRequest(userCampus, userContact, userInvoice, userType);
+        } else if (userType === '' && (userCampus != '' && userContact != '' )) {
             $('#submitButton').text('신청 종류를 체크해주세요!');
         }
     });
 }
 
-function sendOpenRequest(userCampus, userContact, userType) {
+function sendOpenRequest(userCampus, userContact, userInvoice, userType) {
     $.ajax({
         type: 'POST',
         async: true,
@@ -68,6 +70,7 @@ function sendOpenRequest(userCampus, userContact, userType) {
         data: {
             userCampus: userCampus,
             userContact: userContact,
+            userInvoice: userInvoice,
             userType: userType
         }
     }).done(function (data) {

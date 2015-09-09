@@ -13,11 +13,13 @@ exports.viewMainPage = function (req, res) {
 exports.stashRequest = function (req, res) {
     var userCampus = req.body.userCampus,
         userContact = req.body.userContact,
+        userInvoice = req.body.userInvoice,
         userType = req.body.userType;
 
     var data = {
         user_campus: userCampus,
         user_contact: userContact,
+        user_invoice: userInvoice,
         user_type: userType
     };
 
@@ -26,7 +28,6 @@ exports.stashRequest = function (req, res) {
             error(err);
             res.status(500).send();
         } else {
-            console.log(result);
             res.status(200).send();
         }
     });
