@@ -25,7 +25,9 @@ app.use(cookieParser());
 
 //set router
 var mainRouter = require(SOURCE_ROOT + '/mainRouter');
+var mobileRouter = require(SOURCE_ROOT + '/mobileRouter');
 
+app.use('/mobile', mobileRouter);
 app.use('/', mainRouter);
 
 // catch 404 and forward to error handler
