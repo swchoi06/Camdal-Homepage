@@ -198,36 +198,13 @@ body {
     width: 200px;
     height: 20px;
     margin-left: 80px;
-    margin-bottom: 60px;
-    color: rgba(255, 127, 39, 0.9);
-    font-size: 20px;
-    line-height: 70px;
-}
-
-#section2 .campusList {
-    float: left;
-    width: 300px;
-    height: auto;
-    line-height: 30px;
-    font-size: 16px;
-    color: rgba(255, 127, 39, 0.8);
-}
-
-#section2 .campusList.first {
-    margin-left: 94px;
-}
-
-#section3 .title {
-    width: 200px;
-    height: 20px;
-    margin-left: 80px;
     margin-bottom: 42px;
     color: rgba(255, 127, 39, 0.9);
     font-size: 20px;
     line-height: 70px;
 }
 
-#section3 .description {
+#section2 .description {
     width: 560px;
     margin-left: 94px;
     margin-bottom: 30px;
@@ -238,30 +215,53 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-#section3 .description span {
+#section2 .description span {
     font-size: 16px;
     color: rgba(255, 127, 39, 0.9);
     line-height: 42px;
 }
 
-#section3 .instruction {
+#section2 .instruction {
     width: 500px;
     height: 300px;
     margin-left: 92px;
     margin-bottom: 60px;
     color: rgba(255, 127, 39, 0.9);
-    font-size: 20px;
+    font-size: 19px;
     line-height: 30px;
 }
 
-#section3 .instruction .detail {
+#section2 .instruction .detail {
     margin-top: 4px;
     margin-bottom: 2px;
-    padding-left: 26px;
+    padding-left: 20px;
     font-size: 14px;
     line-height: 20px;
     vertical-align: text-top;
     color: rgba(0, 0, 0, 0.6);
+}
+
+#section3 .title {
+    width: 200px;
+    height: 20px;
+    margin-left: 80px;
+    margin-bottom: 60px;
+    color: rgba(255, 127, 39, 0.9);
+    font-size: 20px;
+    line-height: 70px;
+}
+
+#section3 .campusList {
+    float: left;
+    width: 300px;
+    height: auto;
+    line-height: 30px;
+    font-size: 16px;
+    color: rgba(255, 127, 39, 0.8);
+}
+
+#section3 .campusList.first {
+    margin-left: 94px;
 }
 
 #section4 .title {

@@ -1,3 +1,42 @@
 #header ul li#news {
     border-bottom: 8px solid rgba(255, 127, 39, 0.8);
 }
+
+.content {
+    width: calc(100% - 120px);
+    height: auto;
+    margin-top: 170px;
+    margin-left: 60px;
+}
+
+.title {
+    width: 400px;
+    height: 20px;
+    margin-bottom: 100px;
+    color: rgba(255, 127, 39, 0.9);
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.news {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.news .newslink {
+    font-size: 14px;
+    line-height: 40px;
+    text-decoration: none;
+    color: rgba(255, 127, 39, 0.9);
+    word-break: keep-all;
+}
+
+.news .reference {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+    word-break: keep-all;
+}
