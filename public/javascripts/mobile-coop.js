@@ -1,16 +1,10 @@
 /**
- * Created by youngkim on 2015. 9. 7..
+ * Created by youngkim on 2015. 9. 11..
  */
 
 'use strict';
 
 $(document).ready(function () {
-    $('#fullpage').fullpage({
-        anchors: ['introduction', 'news', 'instruction', 'campus', 'cooperation'],
-        menu: '#menu',
-        scrollingSpeed: 1000
-    });
-
     registerEvent();
 });
 

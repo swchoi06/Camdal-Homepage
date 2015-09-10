@@ -5,5 +5,31 @@ html
     head
         include ../layout/header.jade
         link(href='/stylesheets/mobile-coop.css', rel='stylesheet', type='text/css')
+        script(src='http://code.jquery.com/jquery-1.11.1.min.js')
+        script(src = '/javascripts/mobile-coop.js')
     body
         include ../layout/nav.jade
+        .content
+            .title
+                | - 오픈신청
+            .form
+                .formCell
+                    img(src='/images/campus.png')
+                    input#campusName(placeholder='캠퍼스 이름')
+                .formCell
+                    img(src='/images/contact.png')
+                    input#contact(placeholder='연락처 (전화/이메일)')
+                .formCell
+                    img(src='/images/invoice.png')
+                    input#invoice(placeholder='요청사항 / 건의사항 / 하고싶은 말')
+                .type
+                    .typeCell
+                        img#studentBox(src='/images/uncheck.png')
+                        .detail
+                            | 학생회 참여 신청
+                    .typeCell
+                        img#associationBox(src='/images/uncheck.png')
+                        .detail
+                            | 우리 학교도 열어주세요 (학생)
+                #submitButton
+                    | 오픈신청하기!
