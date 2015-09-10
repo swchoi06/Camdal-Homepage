@@ -4,7 +4,7 @@
 
 $(document).ready(function () {
     $('#fullpage').fullpage({
-        anchors: ['introduction', 'news', 'campus', 'cooperation'],
+        anchors: ['introduction', 'news', 'campus', 'instruction', 'cooperation'],
         menu: '#menu',
         scrollingSpeed: 1000
     });
