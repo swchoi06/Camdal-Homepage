@@ -7,3 +7,32 @@ html
         link(href='/stylesheets/mobile-main.css', rel='stylesheet', type='text/css')
     body
         include ../layout/nav.jade
+        .content
+            #vision
+                .title
+                    | 캠퍼스:달은?
+                | "대학교 캠퍼스 특화 배달앱"
+            #vision-detail
+                | "학생들이 실제로 주문하는 음식점"
+                br
+                | "학교 안 까지 배달하는 음식점"
+            #info
+                | 캠퍼스:달은 위의 두 가지 기준으로 선별한
+                br
+                | 캠퍼스 주면 음식점을&nbsp;
+                span
+                    | &nbsp;모두&nbsp;
+                | 담고 있습니다.
+                br
+                | 저희는 음식점 업주, 소비자 모두에게
+                br
+                | 도움이 되는 배달앱 생태계를 통해
+                br
+                span
+                    | "모두를 만족시키는 배달앱"
+                | &nbsp; 을 만들고자 합니다.
+            #download
+                .downloadLink(onclick='window.open(\'https://itunes.apple.com/kr/app/kaempeoseu-dal/id726115856?mt=8\', \'_blank\');')
+                    | iPhone
+                .downloadLink(onclick='window.open(\'https://play.google.com/store/apps/details?id=com.lchpatners.shadal&hl=ko\', \'_blank\');')
+                    | Android
