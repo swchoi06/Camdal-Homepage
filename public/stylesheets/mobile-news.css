@@ -26,7 +26,7 @@
 }
 
 .news .newslink {
-    font-size: 14px;
+    font-size: 32px;
     line-height: 40px;
     text-decoration: none;
     color: rgba(255, 127, 39, 0.9);
@@ -35,8 +35,8 @@
 
 .news .reference {
     margin-top: 16px;
-    margin-bottom: 40px;
-    font-size: 12px;
+    margin-bottom: 60px;
+    font-size: 24px;
     color: rgba(0, 0, 0, 0.7);
     word-break: keep-all;
 }

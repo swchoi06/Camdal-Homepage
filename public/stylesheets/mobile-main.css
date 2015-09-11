@@ -56,7 +56,7 @@
 
 #download .downloadLink {
     width: 420px;
-    margin: 70px auto 0 auto;
+    margin: 0 auto 70px auto;
     cursor: pointer;
 }
 

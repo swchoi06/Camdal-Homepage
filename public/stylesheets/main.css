@@ -16,7 +16,7 @@ body {
 
 #main {
     width: 1000px;
-    height: auto;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -96,10 +96,17 @@ body {
     font-size: 13px;
 }
 
+.section {
+    margin: 0;
+    padding: 0;
+}
+
 .content {
-    position: relative;
-    margin-left: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     margin-top: -270px;
+    margin-left: -400px;
     width: 800px;
     height: 500px;
 }
@@ -276,9 +283,9 @@ body {
 
 #section4 .form {
     width: 600px;
-    height: 170px;
+    height: auto;
     margin-left: 100px;
-    margin-top: 90px;
+    margin-top: 60px;
 }
 
 #section4 .formCell img {
@@ -331,8 +338,8 @@ body {
 
 #section4 .type {
     width: 600px;
-    height: 100px;
-    margin: 30px auto 0 auto;
+    height: 80px;
+    margin: 10px auto 0 auto;
     padding-left: 40px;
 }
 
